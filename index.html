@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>
+    A Todo App
+  </title>
+</head>
+
+<body>
+  <div class="app">
+
+    <h1>Your daily todo's</h1>
+
+    <div class="new-task">
+      <form>
+        <h3>Create a New Task</h3>
+        <label for="tname">Name</label>
+        <input type="text" id="tname" name="tname">
+        <br />
+
+        <label for="priority">Priority</label>
+        <select name="priority" id="priority">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+          <br />
+
+          <label for="tdate">Deadline </label>
+          <input type="date" id="tdate" name="tdate">
+          <br />
+
+          <button id="addbtn">Add</button>
+      </form>
+    </div>
+
+    <div class="prev-task">
+      <h3>Previous Tasks</h3>
+      <div class="single-task">
+      </div>
+      <br />
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
